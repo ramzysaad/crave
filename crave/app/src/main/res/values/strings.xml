@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Crave</string>
+    <string name="action_settings">Settings</string>
+    <string name="appLogo">crave</string>
+    <string name="title_activity_drink">DrinkActivity</string>
+    <string-array name="options">
+        <item>Drinks</item>
+        <item>Food</item>
+        <item>Food2</item>
+        <item>Food3</item>
+        <item>Food4</item>
+    </string-array>
+
+</resources>
