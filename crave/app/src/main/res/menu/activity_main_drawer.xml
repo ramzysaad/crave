@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_store_mall_directory_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_local_phone_black_24dp"
+            android:title="@string/menu_contact" />
+        <item
+            android:id="@+id/nav_follow"
+            android:icon="@drawable/ic_tap_and_play_black_24dp"
+            android:title="@string/menu_follow" />
+
+    </group>
+
+    <item android:title="Crave Menu">
+
+        <menu>
+
+
+
+            <item
+                android:id="@+id/nav_deserts"
+                android:icon="@drawable/ic_cake_black_24dp"
+                android:title="@string/menu_deserts" />
+
+
+
+
+            <item
+                android:id="@+id/nav_salad"
+                android:icon="@drawable/ic_room_service_black_24dp"
+                android:title="@string/menu_salad" />
+
+
+
+
+
+
+            <item
+                android:id="@+id/nav_drinks"
+                android:icon="@drawable/ic_free_breakfast_black_24dp"
+                android:title="@string/menu_drinks" />
+
+
+
+
+
+            <item
+                android:id="@+id/nav_maindish"
+                android:icon="@drawable/ic_room_service_black_24dp"
+                android:title="@string/menu_maindish" />
+
+
+
+
+
+        </menu>
+    </item>
+
+</menu>
