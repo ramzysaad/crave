@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
@@ -16,20 +17,13 @@ import edu.rys5477.crave.R;
 
 public class DesertsFragment extends Fragment {
 
-    private DesertsViewModel desertsViewModel;
+    public DesertsFragment(){
+
+    }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        desertsViewModel =
-                ViewModelProviders.of(this).get(DesertsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_deserts, container, false);
-        final TextView textView = root.findViewById(R.id.text_deserts);
-        desertsViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
-        return root;
+        Toast.makeText((getActivity()),"Hello Desert" ,Toast.LENGTH_LONG);
+        return inflater.inflate(R.layout.fragment_deserts, container, false);
     }
 }

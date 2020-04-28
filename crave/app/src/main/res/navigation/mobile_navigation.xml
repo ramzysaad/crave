@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/nav_contact"
-        android:name="edu.rys5477.crave.ui.contact.ContactFragment"
+        android:name="edu.rys5477.crave.ContactFragment"
         android:label="@string/menu_contact"
         tools:layout="@layout/fragment_contact" />
 

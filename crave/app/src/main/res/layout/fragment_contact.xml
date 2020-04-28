@@ -4,50 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/colorPrimaryDark" >
 
 
-    <fragment
-        android:id="@+id/mapFragment"
-        android:name="com.google.android.gms.maps.MapFragment"
-        android:layout_width="370dp"
-        android:layout_height="370dp"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="280dp">
+
+        <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+
+            android:id="@+id/map1"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MapsActivity" />
 
 
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_contact"
-        tools:ignore="MissingConstraints">
+    </LinearLayout>
 
-    </fragment>
 
     <TextView
-        android:id="@+id/text_contact"
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
-        android:textAlignment="center"
+        android:gravity="center"
+        android:text="\n\n\n\n4010 Jonestown Rd, Harrisburg, PA 17109 \n\n 717_000_0000"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="148dp"
-        tools:ignore="MissingConstraints" />
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="34dp" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="52dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="84dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mapFragment"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/googleg_standard_color_18" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

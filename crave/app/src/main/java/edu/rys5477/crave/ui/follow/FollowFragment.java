@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
@@ -16,20 +17,13 @@ import edu.rys5477.crave.R;
 
 public class FollowFragment extends Fragment {
 
-    private FollowViewModel followViewModel;
+    public FollowFragment(){
+
+    }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        followViewModel =
-                ViewModelProviders.of(this).get(FollowViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_follow, container, false);
-        final TextView textView = root.findViewById(R.id.text_follow);
-        followViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
-        return root;
+        Toast.makeText((getActivity()),"Hello floww" ,Toast.LENGTH_LONG);
+        return inflater.inflate(R.layout.fragment_follow, container, false);
     }
 }
