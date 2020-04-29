@@ -1,4 +1,4 @@
-package edu.rys5477.crave;
+package edu.rys5477.crave.ui.countact;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "346850322075",
+    "firebase_url": "https://crave-d2524.firebaseio.com",
+    "project_id": "crave-d2524",
+    "storage_bucket": "crave-d2524.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346850322075:android:8f364bd4a238f0b24fc83e",
+        "android_client_info": {
+          "package_name": "edu.rys5477.crave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346850322075-mn5q067rhkrcpc6cli5c528vbrlpmnlm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.rys5477.crave",
+            "certificate_hash": "df8c66b2dc6efafc2b395cbaf4254edf5c0052b0"
+          }
+        },
+        {
+          "client_id": "346850322075-jsb9hla66g69fvq8g0e9a82halh8jiak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwSdHrA-jnnNq1nViVK8kpR6bknSVD5jE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346850322075-jsb9hla66g69fvq8g0e9a82halh8jiak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

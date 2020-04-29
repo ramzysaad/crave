@@ -1,4 +1,4 @@
-package edu.rys5477.crave;
+package edu.rys5477.crave.ui.countact;
 
 import androidx.fragment.app.FragmentActivity;
 
@@ -10,6 +10,8 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import edu.rys5477.crave.R;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 

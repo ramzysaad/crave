@@ -3,6 +3,7 @@ package edu.rys5477.crave;
 import android.os.Bundle;
 
 import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -14,17 +15,18 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.Menu;
 
+import edu.rys5477.crave.ui.drinks.DrinksFragment;
+
+
 public class MainActivity extends AppCompatActivity  {
 
-private RecyclerView recyclerView;
-private RecyclerView.Adapter adapter;
 
 
     private AppBarConfiguration mAppBarConfiguration;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +34,21 @@ private RecyclerView.Adapter adapter;
         setContentView(R.layout.activity_main);
 
 
+        DrinksFragment fragment =new DrinksFragment();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.placeholder,fragment);
+        fragmentTransaction.commit();
+
+
+
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+
+
 
 
 
@@ -51,6 +66,11 @@ private RecyclerView.Adapter adapter;
         NavigationUI.setupWithNavController(navigationView, navController);
 
 
+
+
+
+
+
     }
 
 
@@ -61,10 +81,6 @@ private RecyclerView.Adapter adapter;
         return true;
 
     }
-
-
-
-
 
 
 
