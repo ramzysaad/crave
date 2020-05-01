@@ -27,6 +27,13 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        MediaPlayer ring= MediaPlayer.create(MainActivity.this,R.raw.jorgesys_song);
+        ring.start();
+        ring.setLooping(true); // Set looping
+        ring.setVolume(100,100);
+
+
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 

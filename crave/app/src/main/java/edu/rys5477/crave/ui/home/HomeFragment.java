@@ -1,6 +1,7 @@
 package edu.rys5477.crave.ui.home;
 
 import android.graphics.drawable.AnimationDrawable;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import edu.rys5477.crave.MainActivity;
 import edu.rys5477.crave.R;
 
 public class HomeFragment extends Fragment   {
