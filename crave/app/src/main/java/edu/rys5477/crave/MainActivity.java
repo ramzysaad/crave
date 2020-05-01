@@ -1,29 +1,23 @@
 package edu.rys5477.crave;
 
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
-
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-
 import com.google.android.material.navigation.NavigationView;
-
 import androidx.drawerlayout.widget.DrawerLayout;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
+import android.media.MediaPlayer;
 import android.view.Menu;
-
-import edu.rys5477.crave.ui.drinks.DrinksFragment;
+import android.widget.ImageView;
 
 
 public class MainActivity extends AppCompatActivity  {
-
-
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -33,23 +27,8 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        DrinksFragment fragment =new DrinksFragment();
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.placeholder,fragment);
-        fragmentTransaction.commit();
-
-
-
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
-
-
-
 
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -65,14 +44,7 @@ public class MainActivity extends AppCompatActivity  {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-
-
-
-
-
-
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -82,17 +54,12 @@ public class MainActivity extends AppCompatActivity  {
 
     }
 
-
-
     @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
-
-
-
 
 }
 

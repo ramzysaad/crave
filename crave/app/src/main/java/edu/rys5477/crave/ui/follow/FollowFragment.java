@@ -26,4 +26,10 @@ public class FollowFragment extends Fragment {
         Toast.makeText((getActivity()),"Hello floww" ,Toast.LENGTH_LONG);
         return inflater.inflate(R.layout.fragment_follow, container, false);
     }
+
+
+
+
+
+
 }
